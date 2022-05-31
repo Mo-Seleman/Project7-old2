@@ -739,8 +739,12 @@ main {
 .facebook-image,
 .instagram-image,
 .twitter-image {
-  width: 90px;
-  padding: 20px;
+  width: 70px;
+  padding: 10px;
+  border: 0.1px solid #7477bf;
+  background-color: #7477bf;
+  border-radius: 50%;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

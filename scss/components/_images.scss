@@ -14,6 +14,10 @@
 .facebook-image,
 .instagram-image,
 .twitter-image {
-   width: 90px;
-   padding: 20px;
+   width: 70px;
+   padding: 10px;
+   border: 0.1px solid $dark-purple;
+   background-color: $dark-purple;
+   border-radius: 50%;
+   margin: 10px;
 }
