@@ -42,6 +42,7 @@ header span {
   margin: auto;
 :hover {
   transform: scale(1.2);
+  transition: transform 0.1s;
  }
 }
 

@@ -53,28 +53,29 @@ header span {
 /* line 43, ../../../../Code/Project7/scss/base/_typography.scss */
 .bellIconContainer :hover {
   transform: scale(1.2);
+  transition: transform 0.1s;
 }
 
-/* line 48, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 49, ../../../../Code/Project7/scss/base/_typography.scss */
 #header-img {
   width: 40px;
   border-radius: 50%;
   justify-self: center;
 }
 
-/* line 54, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 55, ../../../../Code/Project7/scss/base/_typography.scss */
 header h1 {
   justify-self: center;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 grey, 1px 1px 0 grey;
 }
 
-/* line 60, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 61, ../../../../Code/Project7/scss/base/_typography.scss */
 .studentName {
   justify-self: center;
   font-size: 13.5px;
 }
 
-/* line 65, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 66, ../../../../Code/Project7/scss/base/_typography.scss */
 hr {
   margin: 25px;
 }
@@ -82,19 +83,19 @@ hr {
 /* ================================================================ */
 /*                               Body                               */
 /* ================================================================ */
-/* line 73, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 74, ../../../../Code/Project7/scss/base/_typography.scss */
 .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* line 79, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 80, ../../../../Code/Project7/scss/base/_typography.scss */
 .headline {
   padding: 0 10px;
 }
 
-/* line 83, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 84, ../../../../Code/Project7/scss/base/_typography.scss */
 .light-grey-tab {
   background-color: #f5f5f5;
   border: 1px solid #cfcfcf;
@@ -102,7 +103,7 @@ hr {
   height: 50px;
 }
 
-/* line 90, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 91, ../../../../Code/Project7/scss/base/_typography.scss */
 .alert {
   display: flex;
   justify-content: space-between;
@@ -115,49 +116,49 @@ hr {
   border-radius: 7px;
 }
 
-/* line 100, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 101, ../../../../Code/Project7/scss/base/_typography.scss */
 .alert p {
   font-size: 13px;
 }
 
-/* line 105, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 106, ../../../../Code/Project7/scss/base/_typography.scss */
 .traffic {
   padding: 10px;
 }
 
-/* line 108, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 109, ../../../../Code/Project7/scss/base/_typography.scss */
 .traffic,
 .daily-traffic,
 .mobile-users {
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 114, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 115, ../../../../Code/Project7/scss/base/_typography.scss */
 .daily-traffic {
   padding: 0 10px 10px 10px;
 }
 
-/* line 119, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 120, ../../../../Code/Project7/scss/base/_typography.scss */
 .daily-traffic h3 {
   padding: 10px 0;
 }
 
-/* line 123, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 124, ../../../../Code/Project7/scss/base/_typography.scss */
 .mobile-users {
   padding: 10px;
 }
 
-/* line 125, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 126, ../../../../Code/Project7/scss/base/_typography.scss */
 .mobile-users h3 {
   padding-bottom: 10px;
 }
 
-/* line 130, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 131, ../../../../Code/Project7/scss/base/_typography.scss */
 .socialStatsH3 {
   padding: 10px 0 0 10px;
 }
 
-/* line 134, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 135, ../../../../Code/Project7/scss/base/_typography.scss */
 .new-members,
 .recent-activity,
 .message-user,
@@ -169,7 +170,7 @@ hr {
 /* ============================================= */
 /*                  Charts                       */
 /* ============================================= */
-/* line 145, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 146, ../../../../Code/Project7/scss/base/_typography.scss */
 .widget-container-traffic,
 .widget-container-daily-traffic,
 .widget-container-mobile-users {
@@ -180,7 +181,7 @@ hr {
 /* ===================================== */
 /*              Social Stats             */
 /* ===================================== */
-/* line 155, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 156, ../../../../Code/Project7/scss/base/_typography.scss */
 .facebook-stats,
 .instagram-stats,
 .twitter-stats {
@@ -193,7 +194,7 @@ hr {
   align-items: center;
 }
 
-/* line 167, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 168, ../../../../Code/Project7/scss/base/_typography.scss */
 #facebook-text-header,
 #instagram-text-header,
 #twitter-text-header {
@@ -201,7 +202,7 @@ hr {
   color: #7477bf;
 }
 
-/* line 174, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 175, ../../../../Code/Project7/scss/base/_typography.scss */
 #facebook-text-number,
 #instagram-text-number,
 #twitter-text-number {
@@ -212,18 +213,18 @@ hr {
 /* ===================================== */
 /*      New Members/Recent Activity      */
 /* ===================================== */
-/* line 185, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 186, ../../../../Code/Project7/scss/base/_typography.scss */
 .styleTag {
   text-align: center;
 }
 
-/* line 189, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 190, ../../../../Code/Project7/scss/base/_typography.scss */
 #new-members-header,
 #recent-activity-header {
   margin-bottom: 15px;
 }
 
-/* line 194, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 195, ../../../../Code/Project7/scss/base/_typography.scss */
 #Victoria-Chambers a,
 #Dale-Byrd a,
 #Dawn-Wood a,
@@ -234,12 +235,12 @@ hr {
 /* ===================================== */
 /*                Settings               */
 /* ===================================== */
-/* line 205, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 206, ../../../../Code/Project7/scss/base/_typography.scss */
 #send-email-notifactions-header {
   padding-right: 15px;
 }
 
-/* line 208, ../../../../Code/Project7/scss/base/_typography.scss */
+/* line 209, ../../../../Code/Project7/scss/base/_typography.scss */
 #set-profile-to-public-toggle {
   padding-right: 40px;
 }
