@@ -4,8 +4,8 @@ const trafficCanvas = document.querySelector("#traffic-chart");
 const dailyTrafficCanvas = document.querySelector("#daily-traffic-chart");
 const mobileUsersCanvas = document.querySelector("#mobile-users-chart");
 const sendButton = document.querySelector("#message-user-button");
-const searchForUser = document.querySelector("#message-user-search")
-const messageForUser = document.querySelector("#message-user-message")
+const searchForUser = document.querySelector("#message-user-search");
+const messageForUser = document.querySelector("#message-user-message");
 
 /* ============================================= */
 /*                  X Button                     */
@@ -25,12 +25,12 @@ const trafficChart = new Chart(trafficCanvas, {
     labels: [
       "16-22",
       "23-29",
-       "30-5",
-       "6-12",
+      "30-5",
+      "6-12",
       "13-19",
       "20-26",
-       "27-3",
-       "4-10",
+      "27-3",
+      "4-10",
       "11-17",
       "18-24",
       "25-31",
@@ -46,85 +46,72 @@ const trafficChart = new Chart(trafficCanvas, {
     ],
   },
   options: {
-  responsive: true,
-  maintainAspectRatio: false,
-      radius: 3.5,
-     plugins: {
+    responsive: true,
+    maintainAspectRatio: false,
+    radius: 3.5,
+    plugins: {
       legend: {
         display: false,
-      }
-    }
+      },
+    },
   },
 });
 
 const dailyTrafficChart = new Chart(dailyTrafficCanvas, {
   type: "bar",
   data: {
-    labels: [
-      "S",
-      "M",
-      "T",
-      "W",
-      "T",
-      "F",
-      "S"
-    ],
+    labels: ["S", "M", "T", "W", "T", "F", "S"],
     datasets: [
       {
         label: "N/A",
         data: [60, 120, 175, 125, 225, 200, 100],
         backgroundColor: "#7477bf",
-      }
-    ]
+      },
+    ],
   },
   options: {
-responsive: true,
-maintainAspectRatio: false,
-   plugins: {
-    legend: {
-      display: false,
-    }
-   }
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
   },
- }
-);
+});
 
-const mobileUsersChart = new Chart (mobileUsersCanvas, {
+const mobileUsersChart = new Chart(mobileUsersCanvas, {
   type: "doughnut",
   data: {
-    labels: [
-      "Desktop",
-      "Tablet",
-      "Phones"
-    ],
+    labels: ["Desktop", "Tablet", "Phones"],
     datasets: [
       {
         label: "N/A",
         data: [60, 20, 20],
-        backgroundColor: ["#7477bf", "#81c98f", "#51b6c8"]
-      }
-    ]
+        backgroundColor: ["#7477bf", "#81c98f", "#51b6c8"],
+      },
+    ],
   },
   options: {
-responsive: true,
-maintainAspectRatio: false,
-   plugins: {
-    legend: {
-       position: "right",
-    }
-   }
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: "right",
+      },
+    },
   },
- }
-);
+});
 /* ============================================= */
 /*                 Send Button                   */
 /* ============================================= */
-// sendButton.addEventListener("click", (e) => {
-//   const sendButtonValue = e.value;
-//   const searchUserValue = 
-//   if (sendButtonValue === undefined) {
-//     alert("Error: User Not Selected/Message Field Empty");
-//   } else {
-//     alertBanner("Success")
-//   }
-// });
+sendButton.addEventListener("click", (e) => {
+  if (searchForUser.value === "" && messageForUser.value === "") {
+    alert("Error: No User Selected & Message Field Empty");
+  } else if (searchForUser.value === "") {
+    alert("Error: No User Selected");
+  } else if (messageForUser.value === "") {
+    alert("Error: Message Field Empty");
+  } else alert("Message Sent!");
+ }
+);
