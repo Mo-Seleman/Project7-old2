@@ -22,6 +22,9 @@
       padding-right: 26.25rem;
     }
   }
+  .dropdown-menu {
+    width: 200px;
+  }
   .nav-container {
     grid-row-start: 2;
     grid-column-start: 1;
@@ -174,7 +177,7 @@
     padding: 0;
     margin: 0 auto;
   }
-
+  
   #alert-bar {
     width: 88vw;
     p {

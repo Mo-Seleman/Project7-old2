@@ -202,10 +202,48 @@ padding-bottom: 10px;
 /* ===================================== */
 /*                Settings               */
 /* ===================================== */
-
 #send-email-notifactions-header {
   padding-right: 15px;
 }
 #set-profile-to-public-toggle {
   padding-right: 40px;
+
+/* ===================================== */
+/*             Dropdown Menu             */
+/* ===================================== */}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + .5rem);
+  background-color: $grey-theme;
+  color: black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  width: 150px;
+  p {
+    font-size: 12px;
+  }
+  img {
+    padding: 4px;
+  }
+}
+
+.vcDrop, 
+.dbDrop {
+  display: flex;
+  align-items: center;
+}
+.dbDrop {
+  border-top: 1px solid $grey-text;
+}
+/* { outline: none; } */
+#bellIcon:focus + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
 }

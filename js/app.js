@@ -6,6 +6,7 @@ const mobileUsersCanvas = document.querySelector("#mobile-users-chart");
 const sendButton = document.querySelector("#message-user-button");
 const searchForUser = document.querySelector("#message-user-search");
 const messageForUser = document.querySelector("#message-user-message");
+const alertNotification = document.querySelector(".bellIconContainer");
 
 /* ============================================= */
 /*                  X Button                     */
@@ -115,3 +116,7 @@ sendButton.addEventListener("click", (e) => {
   } else alert("Message Sent!");
  }
 );
+
+/* ============================================= */
+/*             Alert Notification                */
+/* ============================================= */
